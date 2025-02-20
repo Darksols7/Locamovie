@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOCAMOVIE</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/pagina.css" />
+  </head>
+  <body>
+    <!------------------------------------------ Cabeçalho ---------------------------------------------------->
+    <header>
+      <input type="checkbox" name="" id="chk1" />
+      <div class="logo"><h1>LOCAMOVIE</h1></div>
+      <div class="search-box">
+        <form>
+          <input type="text" name="search" id="srch" placeholder="Pesquisar" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <!-- Link para a página inicial -->
+        <li><a href="#">Categorias</a></li>
+        <!-- Link para a página de categorias -->
+        <li><a href="listarFilme.php">CRUD</a></li>
+        <!-- Link para a página de registro -->
+        <li><a href="pagamento.html">pagamento</a></li>
+        <!-- Link para a página de pagamento -->
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+      <div class="menu">
+        <label for="chk1">
+          <i class="fa fa-bars"></i>
+        </label>
+      </div>
+    </header>
+    <section class="help">
+      <main>
+        <ul class="slider">
+          <li class="item" style="background-image: url('img/samurai.png')">
+            <div class="content">
+              <h1 class="title">O Último Samurai</h1>
+              <p class="description">
+                Em 1870 é enviado ao Japão o capitão Nathan Algren (Tom Cruise),
+                um conceituado militar norte-americano. A missão de Algren é
+                treinar as tropas do imperador Meiji (Shichinosuke Nakamura),
+                para que elas possam eliminar os últimos samurais que ainda
+                vivem na região. Porém, após ser capturado pelo inimigo, Algren
+                aprende com Katsumoto (Ken Watanabe) o código de honra dos
+                samurais e passa a ficar em dúvida sobre que lado apoiar.
+              </p>
+              <button>Alugar</button>
+            </div>
+          </li>
+          <li
+            class="item"
+            style="background-image: url('img/hellraiserrena.jpg')"
+          >
+            <div class="content">
+              <h1 class="title">
+                Hellraiser<br />
+                Renascido do Inferno
+              </h1>
+              <p class="description">
+                Hellraiser (2022) é uma reimaginação aos olhos do diretor David
+                Bruckner do filme homônimo de 1987. Nesta versão, uma jovem deve
+                enfrentar as forças sádicas e sobrenaturais por trás de uma
+                enigmática caixa de quebra-cabeças responsável pelo
+                desaparecimento de seu irmão.
+              </p>
+              <button>Alugar</button>
+            </div>
+          </li>
+          <li class="item" style="background-image: url('img/carga.jpg')">
+            <div class="content">
+              <h1 class="title">Carga Explosiva 3</h1>
+              <p class="description">
+                Frank Martin (Jason Statham) é obrigado a conduzir Valentina
+                (Natalya Rudakova), a filha de Leonid Vasilev (Jeroen Krabbé), o
+                chefe da Agência de Proteção Ambiental da Ucrânia. Ela foi
+                sequestrada por Jonas Johnson (Robert Knepper), contratado por
+                uma empresa de gerenciamento internacional de resíduos que
+                deseja operar na Ucrânia. Para ter Frank e Valentina sob
+                controle, Jonas prende em seus pulsos um dispositivo que
+                determina que não possam se afastar muito do carro que os
+                conduz, caso contrário o bracelete explode. Contando com a ajuda
+                do inspetor Tarconi (François Berléand), Frank busca um meio de
+                deixar a armadilha.
+              </p>
+              <button>Alugar</button>
+            </div>
+          </li>
+          <li
+            class="item"
+            style="background-image: url('img/panicoNasAlturas.jpg')"
+          >
+            <div class="content">
+              <h1 class="title">Panico Nas Alturas</h1>
+              <p class="description">
+                Em Pânico nas Alturas, cinco adolescentes invadem um teleférico
+                na noite de Réveillon em busca de uma ousada e divertida virada
+                de ano. No entanto, para a surpresa de todos, eles ficam presos
+                na metade do percurso, no ambiente hostil e gelado do lado de
+                fora. É quando o grupo inicia uma luta sem precedentes por
+                sobrevivência.
+              </p>
+              <button>Alugar</button>
+            </div>
+          </li>
+          <li class="item" style="background-image: url('img/abailarina.jpg')">
+            <div class="content">
+              <h1 class="title">A Bailarina</h1>
+              <p class="description">
+                Paris, 1869. Uma sonhadora menina órfã toma uma atitude
+                arriscada para conseguir o que quer: foge para Paris para
+                realizar o sonho de ser uma grande bailarina. Lá ela decide se
+                passar por outra pessoa, e consegue uma vaga no Grand Opera,
+                onde vai aprontar muitas aventuras.
+              </p>
+              <button>Alugar</button>
+            </div>
+          </li>
+          <li
+            class="item"
+            style="background-image: url('img/hoteltransylvania.jpg')"
+          >
+            <div class="content">
+              <h1 class="title">Hotel Transylvania</h1>
+              <p class="description">
+                O Hotel Transilvânia é um resort cinco estrelas que serve de
+                refúgio para que os monstros possam descansar do árduo trabalho
+                de perseguir e assustar os humanos. O local é comandado pelo
+                Conde Drácula (Adam Sandler), que resolve convidar os amigos
+                para comemorar, ao longo de um fim de semana, o 118º aniversário
+                de sua filha Mavis (Selena Gomez). O que ele não esperava era
+                que Jonathan (Adam Samberg), um humano sem noção, fosse aparecer
+                no local justo quando o hotel está repleto de convidados e,
+                ainda por cima, se apaixonasse por Mavis.
+                <button>Alugar</button>
+              </p>
+            </div>
+          </li>
+        </ul>
+        <nav class="nav">
+          <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+          <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+      </main>
+    </section>
+    <br /><br />
+    <!---------------------------------------- FILMES ------------------------------------------------------------------>
+    <!-- ------------------------- CATEGORIAS ------------------------- -->
+    <selection class="Filmes">
+      <h2>FILMES</h2>
+    </selection>
+    <section class="movies">
+      <h2>Ação</h2>
+      <div class="movie">
+        <img src="img/Caçada Sangreta.jpg" alt="Caçada Sangrenta" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Caçada Sangreta.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Carga Explosiva 3.jpg" alt="Carga Explosiva" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Carga Explosiva 3.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/mega tempestade 2.jpg" alt="Mega Tempestade" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/mega tempestade 2.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/O Grande Tsunami.jpg" alt="O Grande Tsunami" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/O Grande Tsunami.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/O Túnel.jpg" alt="O Túnel" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/O Túnel.jpg')">Alugar</button>
+        <!-- Botão para alugar -->
+      </div>
+    </section>
+    <!-- -------------------PROXIMA CATEGORIA -------------------- -->
+    <section class="movies">
+      <h2>Comédia</h2>
+      <div class="movie">
+        <img src="img/Click.jpg" alt="Click" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Click.jpg')">Alugar</button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Os Parças.jpg" alt="Os Parças" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Os Parças.jpg')">Alugar</button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Os Pinguins do Papai.jpg" alt="Os Pinguins do Papai" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Os Pinguins do Papai.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Russell o Cãopeão.jpg" alt="Russell o CãoPeão" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Russell o Cãopeão.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img
+          src="img/Três Ladrões e um Bebê.jpg"
+          alt="Três Ladrões e um Bebê"
+        />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Três Ladrões e um Bebê.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+    </section>
+    <!-- -------------------PROXIMA CATEGORIA -------------------- -->
+    <section class="movies">
+      <h2>Infantil</h2>
+      <div class="movie">
+        <img src="img/A Bailarina.jpg" alt="A Bailarina" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/A Bailarina.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img
+          src="img/Garfield Um Super Herói Animal.jpg"
+          alt="Garfield Um Super Herói Animal"
+        />
+        <!-- Imagem do Filme  -->
+        <button
+          onclick="abrirModalAlugar('img/Garfield Um Super Herói Animal.jpg')"
+        >
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Hotel Transilvânia.jpg" alt="Hotel Transivânia" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Hotel Transilvânia.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img
+          src="img/Meus amigos dinossauros.jpg"
+          alt="Meus Amigos Dinossauros"
+        />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Meus amigos dinossauros.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img
+          src="img/Nina A Heroína dos Setes Mares.jpg"
+          alt="Nina A Heroína dos Setes Mares"
+        />
+        <!-- Imagem do Filme  -->
+        <button
+          onclick="abrirModalAlugar('img/Nina A Heroína dos Setes Mares.jpg')"
+        >
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+    </section>
+    <!-- -------------------PROXIMA CATEGORIA -------------------- -->
+    <section class="movies">
+      <h2>Romance</h2>
+      <div class="movie">
+        <img
+          src="img/A cinco passos de você.jpg"
+          alt="A cinco Passos de Você"
+        />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/A cinco passos de você.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Coragem Para Amar.jpg" alt="Coragem Para Amar" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Coragem Para Amar.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Hora de Recomeçar.jpg" alt="Hora de Recomeçar" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Hora de Recomeçar.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Our Christmas Wedding.jpg" alt="Our Christmas Wedding" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Our Christmas Wedding.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Um inverno dos sonhos.jpg" alt="Um Inverno dos Sonhos" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Um inverno dos sonhos.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+    </section>
+    <!-- -------------------PROXIMA CATEGORIA -------------------- -->
+    <section class="movies">
+      <h2>Suspense</h2>
+      <div class="movie">
+        <img src="img/Á procura.jpg" alt="Á Procura" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Á procura.jpg')">Alugar</button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/A qualquer Custo.jpg" alt="A Qualquer Custo" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/A qualquer Custo.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Infidelidade.jpg" alt="Infidelidade" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Infidelidade.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/O preço da Liberdade.jpg" alt="O Preço da Liberdade" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/O preço da Liberdade.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Sem Rastros.jpg" alt="Sem Rastros" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Sem Rastros.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+    </section>
+    <!-- -------------------PROXIMA CATEGORIA -------------------- -->
+    <section class="movies">
+      <h2>Terror</h2>
+      <div class="movie">
+        <img src="img/Fenômenos Paranormais.jpg" alt="Fenômenos Paranormais" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Fenômenos Paranormais.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Halloween III.jpg" alt="Halloween III" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Halloween III.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img
+          src="img/Hellraiser Renascido do Inferno.jpg"
+          alt="Hellraiser Renascido do Inferno"
+        />
+        <!-- Imagem do Filme  -->
+        <button
+          onclick="abrirModalAlugar('img/Hellraiser Renascido do Inferno.jpg')"
+        >
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Panico nas Alturas.jpg" alt="Panico nas Alturas" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Panico nas Alturas.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+      <div class="movie">
+        <img src="img/Ring O Chamado.jpg" alt="Ring o Chamado" />
+        <!-- Imagem do Filme  -->
+        <button onclick="abrirModalAlugar('img/Ring O Chamado.jpg')">
+          Alugar
+        </button>
+        <!-- Botão para alugar -->
+      </div>
+    </section>
+    <br /><br />
+    <!--------------------------------------------- footer ------------------------------------------------------------->
+    <footer>
+      <p>© 2024 Aluguel de Filmes Online. Todos os direitos reservados.</p>
+    </footer>
+    <!-- ---------------------------------------------------  JAVASCRIPT -------------------------------------------------------------- -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/main.js"></script>
+    <!-- ----------------------------MODAL BLACK FRIDAY ----- JAVASCRIPT PARA FECHAR -->
+    <div class="model-bg" id="modal">
+      <div class="model-box-m-1">
+        <div class="box-x">
+          <div class="x" onclick="fecharModal()">X</div>
+        </div>
+
+        <div class="modal-content">
+          <img src="img/blackfriday.png" alt="blackfriday" />
+          Tudo pela metade do dobro !!!
+        </div>
+      </div>
+    </div>
+    <div class="model-alugar-bg" id="modal-alugar">
+      <div class="model-alugar-box-m-1">
+        <div class="box-x">
+          <div class="x" onclick="fecharModalAlugar()">X</div>
+        </div>
+
+        <div class="modal-alugar-content">
+          <div class="movie">
+            <img id="myImg" src="" alt="alugar" />
+          </div>
+          Clique no botão para confirmar a locação
+          <button class="bt-modal-alugar">Confirmar</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function fecharModal() {
+        let modal = document.getElementById("modal");
+        modal.style.display = "none";
+      }
+    </script>
+    <!-- --------------------------------- MODAL ALUGAR JAVASCRIPT -------------------------------------- -->
+    <script>
+      function fecharModalAlugar() {
+        let modal = document.getElementById("modal-alugar");
+        modal.style.display = "none";
+      }
+      function abrirModalAlugar(path) {
+        document.getElementById("myImg").src = path;
+        document.getElementById("modal-alugar").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

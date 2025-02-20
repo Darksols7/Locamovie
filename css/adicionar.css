@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  background-image: url("../img/cinema5.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body * {
+  box-sizing: border-box;
+}
+body h1{
+
+  color: #ffffff;
+}
+
+.one-piece-existe {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playstation-ou-xbox {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: linear-gradient(45deg, #4789eb, #0066ff);
+  border-radius: 25px;
+  box-shadow: 1px 1px 15px 1px#2f2f46c6;
+}
+
+.o-honrado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.o-honrado > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f0ffffde;
+  color: #0e0e0ede;
+  font-size: 12pt;
+  box-shadow: 1px 1px 15px 1px#2f2f46c6;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.o-honrado > label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+.o-honrado > input::placeholder {
+  color: #f0ffff94;
+}
+
+.o-honrado > .p {
+  color: #000000;
+}
+
+.Asus {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Asus > input {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #4789eb;
+  color: #000000de;
+  font-size: 12pt;
+  box-shadow: 1px 1px 15px 1px#2f2f46c6;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.Asus > input::placeholder {
+  color: #00efef94;
+}

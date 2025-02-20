@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 400px;
+}
+
+.movies h2 {
+  justify-content: none;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.movie {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 10vw;
+  height: 330px;
+}
+
+.movie img {
+  max-width: 100%;
+  border-radius: 5px; /* Bordas arredondadas das imagens */
+  height: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.movie-text {
+  width: 100%;
+  height: 70px;
+}
+.movie-bt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #000000; /* Fundo preto dos botões */
+  color: #fff; /* Cor da fonte branca nos botões */
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.top-movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.top-movies h2 {
+  font-size: 4rem; /* Aumenta o tamanho do "TOP" */
+  margin-right: 2rem;
+}
+
+.top-movie {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.top-movie img {
+  max-width: 100%;
+  border-radius: 5px; /* Bordas arredondadas das imagens */
+}
+
+.rank {
+  position: absolute;
+  bottom: 0px;
+  right: 250px;
+  /*background-color: rgba(0, 0, 0, 0.7);  Fundo semi-transparente (NÃO QUERO MAIS O REALCE)*/
+  color: #fff;
+  padding: 0 0rem;
+  border-radius: 100%;
+  font-size: 8rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #000000,
+    0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000;
+}
+
+.Filmes h2 {
+  font-size: 3rem; /* Aumenta o tamanho do "FILMES" */
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.456); /* Fundo semi-transparente */
+  color: #fff;
+  text-align: center;
+  position: fixed;
+
+  width: 100%;
+  bottom: 0; /* Fixa o rodapé na parte inferior da página */
+  z-index: 400;
+}
